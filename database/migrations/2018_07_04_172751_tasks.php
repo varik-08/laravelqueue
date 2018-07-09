@@ -18,6 +18,7 @@ class Tasks extends Migration
             $table->string('name');
             $table->integer('counter')->default('0');
         });
+        (new DataSeeder())->run();
     }
 
     /**
